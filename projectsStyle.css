@@ -1,0 +1,374 @@
+html {
+	height:100%;
+	width: 100%;
+}
+
+body{
+	margin:0px;
+}
+
+ul.topNavProjects {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul.topNavProjects li {
+	float:left;
+}
+
+ul.topNavProjects li a{
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+ul.topNavProjects li a:hover{
+	background-color: #555;
+}
+
+.projectScrollInitial{
+	background-image: url('projectsBackground.jpeg');
+	height:10%;
+	width: 100%;
+	margin: 0%;
+	background-attachment: fixed;
+   	background-position: center;
+   	background-repeat: no-repeat;
+   	background-size: cover;	
+}
+
+.projectScroll{
+	background-image: url('projectsBackground.jpeg');
+	height: 20%;
+	width: 100%;
+	margin: 0%;
+	background-attachment: fixed;
+   	background-position: center;
+   	background-repeat: no-repeat;
+   	background-size: cover;	
+}
+
+#project1Snake{
+	height: 550px;
+	background-color: #F5F5F5;	
+}
+
+#p1LeftHalf {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#p1RightHalf {
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+#project1SnakeText{
+	font-size: 13px;	
+	font-family: sans-serif;
+	text-align: center;
+	margin: auto;
+  	position: relative;
+  	top: 40%;
+}
+#snakeImage{
+    width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+#snakeImageJpg{
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	vertical-align: middle;
+	
+}
+
+#project2pong{
+	height: 550px;
+	background-color: #F5F5F5;	
+}
+
+#p2LeftHalf {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#p2RightHalf {
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+#project2pongText{
+	font-size: 13px;	
+	font-family: sans-serif;
+	text-align: center;
+	margin: auto;
+  	position: relative;
+  	top: 40%;
+}
+#pongImage{
+    width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+#pongImageJpg{
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+
+#project3BallRun{
+	height: 550px;
+	background-color: #F5F5F5;	
+}
+
+#p3LeftHalf {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#p3RightHalf {
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+#project3BallRunText{
+	font-size: 13px;	
+	font-family: sans-serif;
+	text-align: center;
+	margin: auto;
+  	position: relative;
+  	top: 40%;
+}
+#ballRunImage{
+    width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+#ballRunImageJpg{
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+#project4stockDataScraper{
+	height: 550px;
+	background-color: #F5F5F5;	
+}
+
+#p4LeftHalf {
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#p4RightHalf {
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+#project4stockDataScraperText{
+	font-size: 13px;	
+	font-family: sans-serif;
+	text-align: center;
+	margin: auto;
+  	position: relative;
+  	top: 40%;
+}
+#stockDataScraperImage{
+    width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+#stockDataScraperImageJpg{
+	width: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	top: 7%;
+}
+
+a:link, a:visited{
+	color:blue;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	color:black;
+	text-decoration: none;
+}
+
+@media only screen and (max-width : 600px) {
+	#project1Snake{
+		height: 600px;
+		background-color: #F5F5F5;	
+	}	
+
+	#p1LeftHalf {
+		height: 30%;
+		width: 100%;
+		float: top;
+	}
+
+	#p1RightHalf {
+		height: 70%;
+		width: 100%;
+		float: bottom;
+	}
+
+	#project1SnakeText{
+		font-size: 13px;	
+		font-family: sans-serif;
+		text-align: center;
+		margin: auto;
+	  	position: relative;
+	  	top: 40%;
+	}
+
+	#snakeImage{
+	    width: 100%;
+	    height: 100%;
+	    
+	    object-fit: contain;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		top: 7%;
+	}
+
+	#project2pong{
+	height: 600px;
+	background-color: #F5F5F5;	
+	}
+
+	#p2LeftHalf {
+		height: 30%;
+		width: 100%;
+		float: top;
+	}
+
+	#p2RightHalf {
+		height: 70%;
+		width: 100%;
+		float: bottom;
+	}
+
+	#project2pongText{
+		font-size: 13px;	
+		font-family: sans-serif;
+		text-align: center;
+		margin: auto;
+	  	position: relative;
+	  	top: 40%;
+	}
+
+	#pongImage{
+	    width: 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		top: 17%;
+	}
+
+	#project3BallRun{
+		height: 600px;
+		background-color: #F5F5F5;	
+	}
+
+	#p3LeftHalf {
+		height: 30%;
+		width: 100%;
+		float: top;
+	}
+
+	#p3RightHalf {
+		height: 70%;
+		width: 100%;
+		float: bottom;
+	}
+
+	#project3BallRunText{
+		font-size: 13px;	
+		font-family: sans-serif;
+		text-align: center;
+		margin: auto;
+	  	position: relative;
+	  	top: 40%;
+	}
+
+	#ballRunImage{
+	    width: 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		top: 7%;
+	}
+
+	#project4stockDataScraper{
+		height: 600px;
+		background-color: #F5F5F5;	
+	}
+
+	#p4LeftHalf {
+		height: 30%;
+		width: 100%;
+		float: top;
+	}
+
+	#p4RightHalf {
+		height: 70%;
+		width: 100%;
+		float: bottom;
+	}
+
+	#project4stockDataScraperText{
+		font-size: 13px;	
+		font-family: sans-serif;
+		text-align: center;
+		margin: auto;
+	  	position: relative;
+	  	top: 40%;
+	}
+	
+	#stockDataScraperImage{
+	    width: 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		top: 7%;
+	}
+}
