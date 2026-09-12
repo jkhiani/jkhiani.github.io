@@ -1,250 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jitesh Khiani</title>
-<meta name="description" content="">
-<meta name="author" content="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<title>Cyber Detective</title>
+		<style>
+html, body, #canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+body {
+	color: white;
+	background-color: black;
+	overflow: hidden;
+	touch-action: none;
+}
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+#canvas {
+	display: block;
+}
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+#canvas:focus {
+	outline: none;
+}
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+#status, #status-splash, #status-progress {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
 
-<!-- Header -->
-<header id="header">
-  <div class="intro text-center">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="intro-text">
-            <h1>Jitesh Khiani</h1>
-            <p>Computer Science Student and Aspiring Developer</p>
-            <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- Navigation -->
-<div id="nav">
-  <nav class="navbar navbar-custom">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-      </div>
-      
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#page-top">Home</a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>About Me</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <div class="about-text">
-          <p>As a computer science specialist I am always looking for new ways to expand my knowledge base whether through projects or meeting an array of amazing new people. With a passion for development I often find myself looking for the next project to work on.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Skills Section -->
-<div id="skills" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Skills</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Python</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Java</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>C</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>HTML/CSS/JavaScript</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Android Development</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Unity3D</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Blender</h4>
-      </div>
-      <div class="col-md-3 col-sm-6 skill"> 
-        <h4>Latex</h4>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<!-- Portfolio Section -->
-<div id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Portfolio</h2>
-      <hr>
-    </div>
-    <div class="categories">
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/crypshotScrnshot.png" title="App that uses the Cryptonator API to retrieve live cryptocurrency prices" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Crypshot</h4>
-                <small>App Development</small> </div>
-              <img src="img/portfolio/crypshotScrnshot.png" class="img-responsive" alt="Crypshot"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/ballRunScrnshot.JPG" title="Simple 3D get to the end style game developed using the Unity engine." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Ball Run</h4>
-                <small>Game Development</small> </div>
-              <img src="img/portfolio/ballRunScrnshot.JPG" class="img-responsive" alt="Ball Run"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/probabilityToolkitScrnshot.png" title="A chrome extension developed to help students taking statistics courses to easily calculate probability distributions and find z scores." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Probability Toolkit</h4>
-                <small>Web Extension</small> </div>
-              <img src="img/portfolio/probabilityToolkitScrnshot.png" class="img-responsive" alt="Probability Toolkit"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/stockDataScraperScrnshot.JPG" title="A tool developed to help quickly retrieve company stock data along with current news or open portals to their website. rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Stock Scraper</h4>
-                <small>Python Tool</small> </div>
-              <img src="img/portfolio/stockDataScraperScrnshot.JPG" class="img-responsive" alt="Stock Scraper"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/pongScrnshot.jpg" title="A remake of the classic pong game with multiple game modes created using HTML's canvas." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Pong Tiles</h4>
-                <small>Game Development</small> </div>
-              <img src="img/portfolio/pongScrnshot.jpg" class="img-responsive" alt="Pong Tiles"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/paintScrnshot.png" title="A clone of MS Paint created in groups as a course assignment." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Paint</h4>
-                <small>Java GUI</small> </div>
-              <img src="img/portfolio/paintScrnshot.png" class="img-responsive" alt="Paint"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/exchangeScrnshot.png" title="Python application to alert day traders when desired price levels are reached." rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Forex Alerts</h4>
-                <small>Python Tool</small> </div>
-              <img src="img/portfolio/exchangeScrnshot.png" class="img-responsive" alt="Forex Alerts"> </a> </div>
-          </div>
-        </div>
-      	<div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/interprepScrnshot.png" title="Speech training web app using IBM speech to text API interprepbeta.herokuapp.com" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>InterPrep</h4>
-                <small>Web App</small> </div>
-              <img src="img/portfolio/interprepScrnshot.png" class="img-responsive" alt="InterPrep"> </a> </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="overlay">
-    <div class="container">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="social">
-          <ul>
-            <li><a href="https://github.com/jkhiani"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jitesh-khiani-003044154/"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-      <p>Copyright &copy; 2016 Marcus Hansen. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/easypiechart.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+#status, #status-splash {
+	top: 0;
+	bottom: 0;
+}
+
+#status {
+	background-color: #0b1014;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+#status-splash {
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+
+#status-splash.show-image--false {
+	display: none;
+}
+
+#status-splash.fullsize--true {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+#status-splash.use-filter--false {
+	image-rendering: pixelated;
+}
+
+#status-progress, #status-notice {
+	display: none;
+}
+
+#status-progress {
+	bottom: 10%;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#status-notice {
+	background-color: #5b3943;
+	border-radius: 0.5rem;
+	border: 1px solid #9b3943;
+	color: #e0e0e0;
+	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
+	line-height: 1.3;
+	margin: 0 2rem;
+	overflow: hidden;
+	padding: 1rem;
+	text-align: center;
+	z-index: 1;
+}
+		</style>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+<meta name="description" content="Cyber Detective — programming investigation game" />
+	</head>
+	<body>
+		<canvas id="canvas">
+			Your browser does not support the canvas tag.
+		</canvas>
+
+		<noscript>
+			Your browser does not support JavaScript.
+		</noscript>
+
+		<div id="status">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+			<progress id="status-progress"></progress>
+			<div id="status-notice"></div>
+		</div>
+
+		<script src="index.js"></script>
+		<script>
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":796592,"index.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_THREADS_ENABLED = false;
+const engine = new Engine(GODOT_CONFIG);
+
+(function () {
+	const statusOverlay = document.getElementById('status');
+	const statusProgress = document.getElementById('status-progress');
+	const statusNotice = document.getElementById('status-notice');
+
+	let initializing = true;
+	let statusMode = '';
+
+	function setStatusMode(mode) {
+		if (statusMode === mode || !initializing) {
+			return;
+		}
+		if (mode === 'hidden') {
+			statusOverlay.remove();
+			initializing = false;
+			return;
+		}
+		statusOverlay.style.visibility = 'visible';
+		statusProgress.style.display = mode === 'progress' ? 'block' : 'none';
+		statusNotice.style.display = mode === 'notice' ? 'block' : 'none';
+		statusMode = mode;
+	}
+
+	function setStatusNotice(text) {
+		while (statusNotice.lastChild) {
+			statusNotice.removeChild(statusNotice.lastChild);
+		}
+		const lines = text.split('\n');
+		lines.forEach((line) => {
+			statusNotice.appendChild(document.createTextNode(line));
+			statusNotice.appendChild(document.createElement('br'));
+		});
+	}
+
+	function displayFailureNotice(err) {
+		console.error(err);
+		if (err instanceof Error) {
+			setStatusNotice(err.message);
+		} else if (typeof err === 'string') {
+			setStatusNotice(err);
+		} else {
+			setStatusNotice('An unknown error occurred.');
+		}
+		setStatusMode('notice');
+		initializing = false;
+	}
+
+	const missing = Engine.getMissingFeatures({
+		threads: GODOT_THREADS_ENABLED,
+	});
+
+	if (missing.length !== 0) {
+		if (GODOT_CONFIG['serviceWorker'] && GODOT_CONFIG['ensureCrossOriginIsolationHeaders'] && 'serviceWorker' in navigator) {
+			let serviceWorkerRegistrationPromise;
+			try {
+				serviceWorkerRegistrationPromise = navigator.serviceWorker.getRegistration();
+			} catch (err) {
+				serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
+			}
+			// There's a chance that installing the service worker would fix the issue
+			Promise.race([
+				serviceWorkerRegistrationPromise.then((registration) => {
+					if (registration != null) {
+						return Promise.reject(new Error('Service worker already exists.'));
+					}
+					return registration;
+				}).then(() => engine.installServiceWorker()),
+				// For some reason, `getRegistration()` can stall
+				new Promise((resolve) => {
+					setTimeout(() => resolve(), 2000);
+				}),
+			]).then(() => {
+				// Reload if there was no error.
+				window.location.reload();
+			}).catch((err) => {
+				console.error('Error while registering service worker:', err);
+			});
+		} else {
+			// Display the message as usual
+			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+			displayFailureNotice(missingMsg + missing.join('\n'));
+		}
+	} else {
+		setStatusMode('progress');
+		engine.startGame({
+			'onProgress': function (current, total) {
+				if (current > 0 && total > 0) {
+					statusProgress.value = current;
+					statusProgress.max = total;
+				} else {
+					statusProgress.removeAttribute('value');
+					statusProgress.removeAttribute('max');
+				}
+			},
+		}).then(() => {
+			setStatusMode('hidden');
+		}, displayFailureNotice);
+	}
+}());
+		</script>
+	</body>
 </html>
+
